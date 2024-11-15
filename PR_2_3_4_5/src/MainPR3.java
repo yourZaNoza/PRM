@@ -10,16 +10,17 @@ public class MainPR3 {
 //        }
 //    }
     // задание 2
-//    public static void main(String[] args) {
-//        Scanner input = new Scanner(System.in);
-//        System.out.println("Введите число:");
-//        int n = input.nextInt();
-//        int fact = 1;
-//        for (int i = 1; i < n+1; i++) {
-//            fact = fact * i;
-//        }
-//        System.out.println("Факториал числа: " + fact);
-//    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Введите число:");
+        int n = input.nextInt();
+        int fact = 1;
+        for (int i = 1; i < n + 1; i++) {
+            fact = fact * i;
+        }
+        System.out.println("Факториал числа: " + fact);
+    }
+
     // задание 3 (1)
 //    public static void main(String[] args) {
 //        int i = 0;
@@ -58,12 +59,12 @@ public class MainPR3 {
 //    }
 //
 // задание 5
-    public static void main(String[] args) {
-        System.out.println("Первые 10 чисел последовательности: ");
-        for (int i = 0; i < 10; i++) {
-            int number = -5 * i;
-            System.out.print(number + ", ");
-        }
-    }
+//    /public static void main(String[] args) {
+//        System.out.println("Первые 10 чисел последовательности: ");
+//        for (int i = 0; i < 10; i++) {
+//            int number = -5 * i;
+//            System.out.print(number + ", ");
+//        }
+//    }
 }
 
