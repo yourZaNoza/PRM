@@ -1,4 +1,4 @@
-package rpm_3.constructor;
+package rpm_4.constructor;
 
 public class SayCatService {
 
