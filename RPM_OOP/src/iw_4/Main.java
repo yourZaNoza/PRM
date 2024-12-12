@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        printFlowerStore(); // цветы
-        // printFruitStore(); // фрукты
+        //printFlowerStore(); // цветы
+        printFruitStore(); // фрукты
     }
     // цветы
     public static void printFlowerStore() {
