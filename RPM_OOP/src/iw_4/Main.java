@@ -57,19 +57,23 @@ public class Main {
         System.out.println(totalPrice);
 
         int appleCount = 0, pearCount = 0, aprikotCount = 0;
+        int applePrice = 0, pearPrice = 0, aprikotPrice = 0;
         for (int i = 0; i < fruits.length; i++) {
             if (fruits[i] instanceof Apple) { // является ли объект частью класса
                 appleCount++;
+                applePrice += fruits[i].getPrice();
             } else if (fruits[i] instanceof Pear) {
                 pearCount++;
+                pearPrice += fruits[i].getPrice();
             } else {
                 aprikotCount++;
+                aprikotPrice += fruits[i].getPrice();
             }
         }
 
-        System.out.println("Яблок продано: " + appleCount);
-        System.out.println("Груш продано: " + pearCount);
-        System.out.println("Aбрикосов продано: " + aprikotCount);
+        System.out.println("Яблок продано: " + appleCount + ", на сумму: " + applePrice);
+        System.out.println("Груш продано: " + pearCount + ", на сумму: " + pearPrice);
+        System.out.println("Aбрикосов продано: " + aprikotCount + ", на сумму: " + aprikotPrice);
     }
 
 }
