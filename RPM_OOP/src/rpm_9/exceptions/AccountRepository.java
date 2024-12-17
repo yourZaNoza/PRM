@@ -1,11 +1,12 @@
 package rpm_9.exceptions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AccountRepository {
     private static AccountRepository instance;
     private List<Account> accountList;
-    private AccountRepository() {}
+    private AccountRepository() {this.accountList = new ArrayList<>();}
     public static AccountRepository getInstance(){
         if(instance == null){
             instance = new AccountRepository();

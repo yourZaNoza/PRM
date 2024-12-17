@@ -28,4 +28,8 @@ public class Account {
     public void setBill(Integer bill) {
         this.bill = bill;
     }
+    @Override
+    public String toString() {
+        return "ID = " + id + ", Name = " +name + ", Bill = " + bill;
+    }
 }

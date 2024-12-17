@@ -16,6 +16,7 @@ public class CustomLinkedList<Element> {
 
     private Node<Element> first;
     private Node<Element> last;
+
     public void add(Element element){
         if (first == null) {
             Node<Element> node = new Node<>(element, null, null);
