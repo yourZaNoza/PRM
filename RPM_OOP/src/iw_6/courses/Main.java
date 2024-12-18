@@ -7,9 +7,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Igor Igorev", "Group IS-31", 1, List.of(4, 3, 3)));
+        students.add(new Student("Igor Igorev", "Group IS-11", 1, List.of(4, 3, 3)));
         students.add(new Student("Dima Dmitriev", "Group IS-22", 2, List.of(2, 2, 2)));
         students.add(new Student("Zoia Zoevna", "Group IS-33", 3, List.of(5, 5, 4)));
+        students.add(new Student("Anna Annovna", "Group IS-23", 2, List.of(4, 4, 4)));
+        students.add(new Student("Misha Michailov", "Group IS-13", 1, List.of(5, 5, 2)));
 
         removeStudentsWithLowAverage(students);
         promoteStudents(students);
