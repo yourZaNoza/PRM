@@ -7,14 +7,16 @@ public class Account implements Serializable {
     private String name;
     private Integer age;
     private String phone;
+    private Bill bill;
     private transient String mail;
 
-    public Account(Long id, String name, Integer age, String phone, String mail) {
+    public Account(Long id, String name, Integer age, String phone, String mail, Bill bill) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.phone = phone;
         this.mail = mail;
+        this.bill =bill;
     }
 //    public Account() {
 //        this.id = 0L;
@@ -64,3 +66,4 @@ public class Account implements Serializable {
         this.phone = phone;
     }
 }
+

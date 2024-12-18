@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         FileOutputStream fileOutputStream = new FileOutputStream("account.txt");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        Account account = new Account(1L, "Lori", 3, "88005553535", "lori@cat.xyz");
+        Bill loribill = new Bill(12L, 1000, true);
+        Account account = new Account(1L, "Lori", 3, "88005553535", "lori@cat.xyz", loribill);
         objectOutputStream.writeObject(account);
         objectOutputStream.close();
 
