@@ -1,6 +1,5 @@
 package rpm_11.serialization;
 
-
 import java.io.Serializable;
 
 public class Bill implements Serializable {
@@ -13,6 +12,12 @@ public class Bill implements Serializable {
         this.id = id;
         this.amount = amount;
         this.isOverdraftEnabled = isOverdraftEnabled;
+    }
+
+    public Bill() {
+        this.id = 0L;
+        this.amount = 0;
+        this.isOverdraftEnabled = false;
     }
 
     public void setId(Long id) {
@@ -32,7 +37,7 @@ public class Bill implements Serializable {
     }
 
     public void setOverdraftEnabled(Boolean overdraftEnabled) {
-        isOverdraftEnabled = overdraftEnabled;
+        this.isOverdraftEnabled = overdraftEnabled;
     }
 
     public Boolean getOverdraftEnabled() {

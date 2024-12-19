@@ -9,6 +9,7 @@ public class Account implements Serializable {
     private String phone;
     private Bill bill;
     private transient String mail;
+    private static final long serialVersionUID = 87413088L;
 
     public Account(Long id, String name, Integer age, String phone, String mail, Bill bill) {
         this.id = id;
@@ -18,13 +19,14 @@ public class Account implements Serializable {
         this.mail = mail;
         this.bill =bill;
     }
-//    public Account() {
-//        this.id = 0L;
-//        this.name = "Unknown";
-//        this.age = 0;
-//        this.phone = "Unknown";
-//        this.mail = "Unknown";
-//    }
+    public Account() {
+        this.id = 0L;
+        this.name = "Unknown";
+        this.age = 0;
+        this.phone = "Unknown";
+        this.mail = "Unknown";
+        this.bill = bill;
+    }
 
     public String getName() {
         return name;
