@@ -46,13 +46,13 @@ public class Main {
     public static void recursionedList() {
         RecurtionedList list = new RecurtionedList();
 
-        // Создание списка с вводом с головы с использованием рекурсии
+        // ввод с головы с использованием рекурсии
         list.createHeadRec(10);
         list.createHeadRec(20);
         list.createHeadRec(30);
         System.out.println("Список после создания с головы: " + list);
 
-        // Создание списка с вводом с хвоста с использованием рекурсии
+        // ввод с хвоста с использованием рекурсии
         list.createTailRec(40);
         list.createTailRec(50);
         System.out.println("Список после создания с хвоста: " + list);
