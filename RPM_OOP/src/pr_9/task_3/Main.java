@@ -3,7 +3,7 @@ package pr_9.task_3;
 public class Main {
     public static void main(String[] args) {
         cycledList(); // с использованием цикла
-        recursionedList();
+        recursionedList(); // с использованием рекурсии
     }
     public static void cycledList() {
         CycledList list = new CycledList();

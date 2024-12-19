@@ -5,7 +5,7 @@ public class DSD_create {
     public static void main(String[] args) {
         headAndTail();
         headOnly();
-        headAndTail();
+        tailOnly();
     }
     public static void headAndTail() {
         Node head=new Node(0, null);
